@@ -1,0 +1,34 @@
+{%comment%} steps to set the anchor link 
+
+1- drag the anchor link to the section you want it to go to "#example"
+2- Name the anchor link 
+3- find the button you want to link and set it to #example
+
+{%endcomment%}
+
+<div id="{{ section.settings.link_anchor }}" class="luna-templates-anchor"> </div>
+
+{% schema %}
+  {
+    "name": "💫 Anchor link",
+    "settings": [
+      {
+        "type": "text",
+        "id": "link_anchor",
+        "label": "Anchor Name"
+      }
+    ],
+   "presets": [
+      {
+        "name": "💫 Anchor link",
+        "category": "Luna Templates"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  html {
+      scroll-behavior: smooth;
+  }
+</style>
